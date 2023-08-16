@@ -1,0 +1,17 @@
+{
+  "name": "fancyswitch",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "parcel ./src/gist.html --port 80",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "author": "Alexander Litvinovich",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
