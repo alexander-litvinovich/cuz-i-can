@@ -2,87 +2,12 @@
 <html lang="en">
   <head>
     <title>the Fancy Switch — Cuz I Can!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
-    <style>
-      body {
-        background-color: #d8dee8;
-      }
-
-      .FancySwitch {
-        display: flex;
-        cursor: pointer;
-      }
-
-      .FancySwitch-canvas {
-        overflow: hidden;
-        border-radius: 9999px;
-        box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.2),
-          0 4px 4px rgba(255, 255, 255, 0.8);
-      }
-
-      .FancySwitch-checkbox {
-        display: none;
-      }
-
-      .FancySwitch-track {
-        fill: #4582bc;
-        transition: 0.3s fill ease;
-      }
-
-      .FancySwitch-thumb {
-        transform: translateX(-80px);
-        transition: 0.3s transform ease-out;
-      }
-
-      .FancySwitch-thumbShape {
-        fill: #f4c851;
-        transition: 0.3s fill ease;
-      }
-
-      .FancySwitch-stars,
-      .FancySwitch-clouds {
-        transition: 0.4s transform ease-out;
-      }
-
-      .FancySwitch-stars {
-        transform: translateY(-108px);
-      }
-
-      .FancySwitch-craters {
-        opacity: 0;
-        transition: 0.4s opacity ease-out;
-      }
-
-      .FancySwitch-checkbox:checked + .FancySwitch-canvas .FancySwitch-stars {
-        transform: translateY(0px);
-      }
-
-      .FancySwitch-checkbox:checked + .FancySwitch-canvas .FancySwitch-clouds {
-        transform: translateY(108px);
-      }
-
-      .FancySwitch-checkbox:checked + .FancySwitch-canvas .FancySwitch-track {
-        fill: #1d2031;
-      }
-
-      .FancySwitch-checkbox:checked + .FancySwitch-canvas .FancySwitch-thumb {
-        transform: translateX(80px);
-      }
-      .FancySwitch-checkbox:checked
-        + .FancySwitch-canvas
-        .FancySwitch-thumbShape {
-        fill: #cacfda;
-      }
-
-      .FancySwitch-checkbox:checked + .FancySwitch-canvas .FancySwitch-craters {
-        opacity: 1;
-      }
-    </style>
-
-    <label class="FancySwitch">
+    <label class="FancySwitch" role="switch" title="" tabindex="0">
       <input type="checkbox" class="FancySwitch-checkbox" />
-
       <svg
         width="268"
         height="108"

@@ -5,9 +5,7 @@
   "source": "src/index.js",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "parcel ./src/gist.html --port 80",
-    "watch": "parcel watch",
-    "build": "parcel build"
+    "start": "parcel ./src/index.html --port 80"
   },
   "author": "Alexander Litvinovich",
   "license": "MIT",

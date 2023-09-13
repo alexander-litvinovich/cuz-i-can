@@ -1,7 +1,8 @@
-# the Fancy Switch • Причудливый выключатель
-📺 Check out [YouTube channel](https://www.youtube.com/@cuz-i-can/).
+# 📺 the Fancy Switch • Причудливый выключатель
 
-SVG, CSS, HTML
+[Видео](https://youtu.be/WiWiN_NrXqU)
+
+Figma, SVG, CSS, HTML
 
 ---
 
