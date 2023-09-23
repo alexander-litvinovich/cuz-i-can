@@ -1,0 +1,14 @@
+{
+  "name": "steganography101",
+  "version": "1.0.0",
+  "description": "Just a demonstration of the  approach showed in the video. Like and subscribe, by the way!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Litvinovich",
+  "license": "ISC",
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
