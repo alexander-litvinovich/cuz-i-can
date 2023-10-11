@@ -71,11 +71,10 @@ if (options.decode) {
 }
 
 else if (options.info) {
-    console.log(options);
     const imageCapacities = {
-        1: (loadedPNG.data.length * BIT_MASKS[1].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 1000,
-        2: (loadedPNG.data.length * BIT_MASKS[2].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 1000,
-        3: (loadedPNG.data.length * BIT_MASKS[3].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 1000,
+        1: (loadedPNG.data.length * BIT_MASKS[1].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 16,
+        2: (loadedPNG.data.length * BIT_MASKS[2].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 16,
+        3: (loadedPNG.data.length * BIT_MASKS[3].chunkSize - HEADER_BIT_DEPTH_SIZE - HEADER_SIZE_IN_BITS) / 16,
     };
 
     console.log(`Filename:   ${filename}`);
@@ -83,9 +82,9 @@ else if (options.info) {
     console.log(`Channels:   ${loadedPNG.data.length / loadedPNG.width / loadedPNG.height}`);
     console.log(` `);
     console.log(`Bit depth to image capacity in Unicode (16 bits) chars`);
-    console.log(`-b 1 :      ${imageCapacities[1].toFixed(2)} chars (1 bit/channel)`);
-    console.log(`-b 2 :      ${imageCapacities[2].toFixed(2)} chars (2 bits/channel)`);
-    console.log(`-b 3 :      ${imageCapacities[3].toFixed(2)} chars (4 bits/channel)`);
+    console.log(`-b 1 :      ${imageCapacities[1].toFixed(0)} chars (1 bit/channel)`);
+    console.log(`-b 2 :      ${imageCapacities[2].toFixed(0)} chars (2 bits/channel)`);
+    console.log(`-b 3 :      ${imageCapacities[3].toFixed(0)} chars (4 bits/channel)`);
     return;
 }
 
@@ -100,7 +99,7 @@ else if (options.encode) {
     }
 
     if (bitDepth < 1 || bitDepth > 3) {
-        console.log("Wrond bit depth is selected. Use -b 1, 2, or 3.");
+        console.log("Wrong bit depth is selected. Use -b 1, 2, or 3.");
         return -1;
     }
 
