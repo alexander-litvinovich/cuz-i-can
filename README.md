@@ -9,3 +9,4 @@ Check out <a href="https://www.youtube.com/@cuz-i-can/" target="_blank">YouTube 
 Выпуски:
 
 - [the Fancy Switch • Причудливый выключатель](https://youtu.be/WiWiN_NrXqU)
+- [Hidden message • Скрытое послание](https://youtu.be/h8XnvhV4Abc)
