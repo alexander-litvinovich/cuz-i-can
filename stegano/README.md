@@ -1,6 +1,6 @@
 # 📺 Hidden message • Скрытое послание
 
-[Видео](https://localhost/#tbd)
+[Видео]([https://localhost/#tbd](https://youtu.be/h8XnvhV4Abc))
 
 Photoshop, NodeJS
 
