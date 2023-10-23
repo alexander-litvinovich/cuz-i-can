@@ -1,0 +1,19 @@
+{
+  "name": "gravitygame",
+  "version": "1.0.0",
+  "description": "Making off a game with a gravity sensor control",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html --host 0.0.0.0 --port 80"
+  },
+  "keywords": [
+    "JS",
+    "Sensor",
+    "API"
+  ],
+  "author": "Alexander Litvinovich",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
