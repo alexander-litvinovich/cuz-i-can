@@ -1,13 +1,17 @@
 import Phaser from 'phaser';
 import GameScene from './GameScene';
+import Hud from './Hud';
 
 const config = {
     type: Phaser.AUTO,
     width: 600,
     height: 800,
-    scene: [GameScene],
+    scene: [GameScene, Hud],
     physics: {
-        default: "arcade"
+        default: "arcade",
+        debug: true,
+        debugShowBody: true,
+        debugBodyColor: 0x0000ff
     }
 };
 
